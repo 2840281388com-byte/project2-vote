@@ -3,7 +3,7 @@ import compression from 'vite-plugin-compression'
 
 export default defineConfig({
   root: 'src',
-  base: '/',
+  base: process.env.GITHUB_ACTIONS ? '/project2-vote/' : '/',
   publicDir: '../public',
   plugins: [
     compression({

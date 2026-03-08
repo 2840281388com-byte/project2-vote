@@ -95,6 +95,6 @@ window.addEventListener('message', (e)=>{
 // Register Service Worker
 if('serviceWorker' in navigator){
   window.addEventListener('load', ()=>{
-    navigator.serviceWorker.register('/js/sw.js').catch(()=>{})
+    navigator.serviceWorker.register(`${import.meta.env.BASE_URL}js/sw.js`).catch(()=>{})
   })
 }

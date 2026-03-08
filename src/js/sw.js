@@ -1,8 +1,9 @@
 const CACHE_NAME = 'ban-cao-v1'
 const CORE_ASSETS = [
-  '/',
-  '/css/styles.css',
-  '/js/main.js'
+  './',
+  './index.html',
+  './css/styles.css',
+  './js/main.js'
 ]
 self.addEventListener('install', (event)=>{
   event.waitUntil(
@@ -20,7 +21,7 @@ self.addEventListener('fetch', (event)=>{
   const req = event.request
   const url = new URL(req.url)
   if(req.method !== 'GET') return
-  if(url.pathname.startsWith('/assets/') || req.destination==='image'){
+  if(url.pathname.includes('/assets/') || req.destination==='image'){
     event.respondWith(
       caches.match(req).then(cached=>{
         const fetchPromise = fetch(req).then(res=>{
