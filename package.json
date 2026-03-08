@@ -1,0 +1,35 @@
+{
+  "name": "ban-cao-spa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "重庆第二师范学院“班草”唐煜涵响应式单页应用",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview --strictPort --port 5173",
+    "lhci": "lhci autorun",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "重庆第二师范学院",
+    "班草",
+    "唐煜涵",
+    "SPA",
+    "Vite"
+  ],
+  "author": "Trae IDE",
+  "license": "MIT",
+  "dependencies": {
+    "dompurify": "^3.0.6",
+    "lazysizes": "^5.3.2"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.13.0",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "rimraf": "^6.0.1",
+    "vite": "^5.1.0",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}
