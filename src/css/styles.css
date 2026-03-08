@@ -54,6 +54,7 @@ dd{margin:0 0 8px;color:#334155}
 .card img{display:block;width:100%;height:auto}
 .card figcaption{padding:8px 12px;color:#334155}
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center}
+.lightbox[hidden]{display:none !important}
 .lightbox-inner{position:relative;max-width:90vw;max-height:90vh}
 #lightbox-img{max-width:90vw;max-height:80vh;cursor:grab;touch-action:none}
 .lightbox-close{position:absolute;top:-8px;right:-8px;border:0;border-radius:999px;background:#fff;color:#111;width:32px;height:32px;cursor:pointer;box-shadow:var(--shadow)}
